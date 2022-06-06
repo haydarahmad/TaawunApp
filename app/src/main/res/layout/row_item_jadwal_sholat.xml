@@ -4,29 +4,38 @@
     android:layout_height="150dp"
     android:clickable="true"
     android:focusable="true"
-    android:paddingBottom="8dp"
+    android:background="@drawable/asharfoto"
+    android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_jadwal_sholat_now"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/half_black"
+        app:cardCornerRadius="15dp"
+        >
+        <TextView
+            android:id="@+id/tv_time_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ashar"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            />
 
-    <TextView
-        android:id="@+id/tv_time_now"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ashar"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-    <TextClock
-        android:id="@+id/tc_time_now"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="11.00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_time_now"
-        android:textSize="20dp"
+        <TextClock
+            android:id="@+id/tc_time_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.00"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
 
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

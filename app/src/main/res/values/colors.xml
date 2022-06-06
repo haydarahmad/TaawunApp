@@ -12,4 +12,5 @@
     <color name="secondary_color">#00BFFC</color>
     <color name="third_color">#91D8E6</color>
     <color name="gray">#D9D9D9</color>
+    <color name="half_black">#80000000</color>
 </resources>
