@@ -10,4 +10,6 @@
     <string name="txt_demo_nama_doa">Nama doa</string>
     <string name="txt_demo_tanggal">tanggal</string>
     <string name="txt_demo_date">Senin, 01-01-2022</string>
+    <string name="txt_demo_title_doa_harian">Do\'a Harian</string>
+    <string name="txt_demo_title_dzikir">Dzikir Pagi/Petang</string>
 </resources>
