@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/third_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageButton
+            android:layout_width=""
+            android:layout_height=""
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
 </androidx.constraintlayout.widget.ConstraintLayout>
