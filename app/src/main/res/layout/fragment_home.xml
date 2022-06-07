@@ -8,14 +8,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary_color"
         tools:context=".HomeFragment">
 
         <ImageView
             android:id="@+id/iv_sholat_now"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background=""
+            android:layout_height="200dp"
+            android:src="@drawable/asharfoto"
+            android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -25,7 +25,7 @@
             android:layout_marginTop="15dp"
             android:format12Hour="E:d:y"
             android:format24Hour="E:d:y"
-            android:text="Senin, 01-01-2022"
+            android:text="@string/txt_demo_date"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,9 +37,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Ashar"
+            android:text="@string/txt_demo_adzan"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
             android:format12Hour="HH:mm"
             android:format24Hour="hh:mm"
             android:gravity="center"
-            android:text="15:05"
+            android:text="@string/txt_demo_time"
             android:textColor="@color/black"
             android:textSize="36sp"
             android:textStyle="bold"
@@ -65,7 +65,7 @@
             android:id="@+id/jadwal_sholat_harian"
             android:layout_width="350sp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60sp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/bg_radius_white"
             android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +76,7 @@
                 android:id="@+id/tv_date_sholat_today"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tanggal"
+                android:text="@string/txt_demo_tanggal"
                 app:layout_constraintBottom_toTopOf="@id/rv_jadwal_sholat_harian"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -87,11 +87,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:clipToPadding="false"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:layout_constraintTop_toBottomOf="@id/tv_date_sholat_today"
                 app:spanCount="2"
-                tools:layout_editor_absoluteX="8dp"
                 tools:listitem="@layout/row_item_jadwal_sholat" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

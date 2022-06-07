@@ -5,4 +5,9 @@
     <string name="home">Home</string>
     <string name="dzikir">Dzikir</string>
     <string name="doa">Doa</string>
+    <string name="txt_demo_time">11.00</string>
+    <string name="txt_demo_adzan">Ashar</string>
+    <string name="txt_demo_nama_doa">Nama doa</string>
+    <string name="txt_demo_tanggal">tanggal</string>
+    <string name="txt_demo_date">Senin, 01-01-2022</string>
 </resources>
