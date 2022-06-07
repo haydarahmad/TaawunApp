@@ -15,7 +15,7 @@
             android:id="@+id/iv_sholat_now"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background=""
+            android:background="@drawable/dzuhurfoto"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
