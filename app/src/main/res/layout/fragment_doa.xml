@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
     tools:context=".DoaFragment">
 
     <ImageView
-        android:id="@+id/img_doa"
+        android:id="@+id/bg_img_doa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/foto_doa"
+        android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/search_doa"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/search_doa"
+        app:layout_constraintStart_toStartOf="@id/search_doa"
+        app:layout_constraintTop_toBottomOf="@id/search_doa" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_doa"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/asharfoto"
-        />
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:layout_marginTop="24dp"
+        android:focusableInTouchMode="true"
+        app:defaultQueryHint="Cari Doa"
+        app:layout_constraintTop_toBottomOf="@id/bg_img_doa"
+        app:layout_constraintBottom_toTopOf="@id/rv_nama_doa"
+        android:inputType="text"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_daftar_doa"
+        android:id="@+id/rv_nama_doa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/row_item_daftar"/>
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_doa"
+        android:layout_marginTop="24dp"
+        tools:listitem="@layout/row_item_daftar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
