@@ -14,8 +14,10 @@
         app:layout_constraintTop_toTopOf="parent"
         >
         <ImageButton
-            android:layout_width=""
-            android:layout_height=""
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_arrow_back"
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
