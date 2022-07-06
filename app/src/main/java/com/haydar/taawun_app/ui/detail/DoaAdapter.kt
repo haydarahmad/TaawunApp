@@ -1,11 +1,13 @@
 package com.haydar.taawun_app.ui.detail
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.haydar.taawun_app.data.ResponseDoa
+import com.haydar.taawun_app.databinding.RowItemDaftarBinding
 
 class DoaAdapter : RecyclerView.Adapter<DoaAdapter.MyViewHolder>() {
-    class MyViewHolder(val binding: ro)
+    class MyViewHolder(val binding: RowItemDaftarBinding) : RecyclerView.ViewHolder(binding.root)
 
     private var listDoa = ArrayList<ResponseDoa>()
 
@@ -15,16 +17,16 @@ class DoaAdapter : RecyclerView.Adapter<DoaAdapter.MyViewHolder>() {
         listDoa.addAll(data)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        TODO("Not yet implemented")
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = MyViewHolder(
+        RowItemDaftarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    )
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.binding.apply {
+            tvNamaDoa.text = listDoa[position].doa
+        }
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount() = listDoa.size
 
 }

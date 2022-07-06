@@ -7,13 +7,6 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class ResponseDoa(
 
-	@field:SerializedName("ResponseDoa")
-	val responseDoa: List<ResponseDoaItem?>? = null
-) : Parcelable
-
-@Parcelize
-data class ResponseDoaItem(
-
 	@field:SerializedName("ayat")
 	val ayat: String? = null,
 

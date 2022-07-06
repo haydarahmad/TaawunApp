@@ -22,7 +22,7 @@
             android:background="@drawable/bg_radius_white"
             >
             <TextView
-                android:id="@+id/nama_doa"
+                android:id="@+id/tv_nama_doa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="nama doa"

@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiService {
-   @GET("doa")
+   @GET("api")
    fun getDoa() : Flowable<List<ResponseDoa>>
 
 }
